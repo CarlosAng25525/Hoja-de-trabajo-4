@@ -40,7 +40,7 @@ public class Main {
         }
 
         // 2. Leer expresión
-        String expression = FileReader.readExpression("datos.txt");
+        String expression = new FileReader().readExpression("datos.txt");
 
         // 3. Convertir infix a postfix
         InfixToPostfixConverter converter =
