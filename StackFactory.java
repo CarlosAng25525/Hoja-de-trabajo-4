@@ -11,10 +11,10 @@ public class StackFactory {
                 return new StackVector<>();
 
             case "list-simple":
-                return new StackList<>(new SinglyLinkedList<>());
+                return new StackList<>(new ListaSimple<>());
 
             case "list-double":
-                return new StackList<>(new DoublyLinkedList<>());
+                return new StackList<>(new ListaDoble<>());
 
             default:
                 throw new IllegalArgumentException("Tipo de pila no válido");

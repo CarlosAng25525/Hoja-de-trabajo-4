@@ -1,8 +1,8 @@
 public class StackList<T> extends AbstractStack<T> {
 
-    private List<T> data;
+    private Lista<T> data;
 
-    public StackList(List<T> list) {
+    public StackList(Lista<T> list) {
         this.data = list;
     }
 
