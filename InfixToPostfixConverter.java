@@ -16,7 +16,7 @@ public class InfixToPostfixConverter<T> {
 
             if (c == ' ') continue;
 
-            // Número (permite varios dígitos)
+            // Número 
             if (Character.isDigit(c)) {
                 while (i < expression.length() && Character.isDigit(expression.charAt(i))) {
                     postfix.append(expression.charAt(i));

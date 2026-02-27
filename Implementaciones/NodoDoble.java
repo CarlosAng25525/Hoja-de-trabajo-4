@@ -1,5 +1,4 @@
 package Implementaciones;
-import java.lang.classfile.Superclass;
 
 public class NodoDoble<T>{
     private T valor;
