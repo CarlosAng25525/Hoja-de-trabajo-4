@@ -1,3 +1,6 @@
+package Implementaciones;
+import Interfaces.AbstractLista;
+
 public class ListaSimple<T> extends AbstractLista<T> {
     private NodoSimple<T> inicio = null;
 

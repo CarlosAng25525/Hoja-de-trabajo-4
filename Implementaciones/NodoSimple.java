@@ -1,3 +1,4 @@
+package Implementaciones;
 public class NodoSimple<T>{
     private T valor;
     private NodoSimple<T> siguiente;

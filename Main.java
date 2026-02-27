@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import Interfaces.Stack;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -43,13 +45,13 @@ public class Main {
         String expression = new FileReader().readExpression("datos.txt");
 
         // 3. Convertir infix a postfix
-        InfixToPostfixConverter converter =
-                new InfixToPostfixConverter(operatorStack);
+        InfixToPostfixConverter<String> converter =
+                new InfixToPostfixConverter<>(operatorStack);
         String postfix = converter.convert(expression);
 
         // 4. Evaluar postfix
-        PostfixEvaluator evaluator =
-                new PostfixEvaluator(valueStack);
+        PostfixEvaluator<Integer> evaluator =
+                new PostfixEvaluator<>(valueStack);
         int result = evaluator.evaluate(postfix);
 
         // 5. Mostrar resultados

@@ -1,3 +1,4 @@
+package Interfaces;
 public abstract class AbstractLista<T> implements Lista<T> {
 
     protected int cont = 0;

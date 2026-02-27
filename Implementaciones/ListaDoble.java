@@ -1,3 +1,7 @@
+package Implementaciones;
+import Interfaces.AbstractLista;
+
+
 public class ListaDoble<T> extends AbstractLista<T> {
     private NodoDoble<T> inicio = null;
     private NodoDoble<T> fin = null;
